@@ -1,0 +1,22 @@
+@charset "utf8"
+
+
+ody{
+    background-color: lightblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+h1 {
+    color: maroon;
+    background-color: darkkhaki;
+}
+
+h2 {
+    color: red;
+    background-color: aquamarine;
+}
+
+p {
+    text-align: justify;
+}

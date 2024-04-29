@@ -1,0 +1,17 @@
+body{
+    background-color: rgb(197, 241, 226);
+}
+h1{
+    color: green;
+    background-color: rgb(195, 231, 141);
+}
+h2{
+    color: rgb(222, 64, 6);
+    background-color: rgb(237, 237, 147);
+}
+ol{
+    color: red;
+}
+p{
+    color: rebeccapurple;
+}
