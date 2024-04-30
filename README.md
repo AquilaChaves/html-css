@@ -5,3 +5,5 @@
 
 <a href="https://aquilachaves.github.io/html-css/exercicios/ex001/index.html"> Executar o ex001</a>
 
+<a href="https://aquilachaves.github.io/html-css/exercicios/ex001/index.html"> Executar o ex001</a>
+
