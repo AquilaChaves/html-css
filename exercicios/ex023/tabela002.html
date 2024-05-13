@@ -12,15 +12,39 @@
          table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
         td, th {
             border: 1px solid black;
             padding: 10px;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgba(172, 255, 47, 0.405);
+        }
+
         thead, tfoot{
             background-color: green;
             color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top:-2px;
+            background-color: green;
+
+        }
+
+        tbody > tr:nth-child(odd) { /*2n-1*/
+            background-color: rgba(150, 14, 235, 0.263);
+        }
+        
+
+        tbody > tr:nth-child(even) { /*2n*/
+            background-color: rgba(144, 238, 144, 0.842);
         }
 
         td.num {
@@ -31,10 +55,11 @@
 <body>
     <h1> Uso de tabelas grandes</h1>
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
 
         </thead>
@@ -91,18 +116,69 @@
                 <td>Roraima</td>
                 <td class="num">636 707</td>
             </tr>
-            
+            <tr>
+                <td>Ceará</td>
+                <td class="num">8 794 957</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8 121 025</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7 610 361</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">6 775 805</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="num">2 817 381</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="num">636 707</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">8 794 957</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8 121 025</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7 610 361</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">6 775 805</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="num">2 817 381</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="num">636 707</td>
+            </tr>
 
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>210.147.125</strong></td>
             </tr>
 
         </tfoot>
 
     </table>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sit corrupti quis! Cupiditate sit quod maiores modi rem, eaque vel consectetur cum perspiciatis voluptates beatae error soluta repellat, temporibus nostrum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam libero, cumque nisi excepturi ea voluptatibus molestias non dolorem illum distinctio! Tenetur rerum quaerat asperiores exercitationem error obcaecati commodi adipisci at! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque earum provident, dicta exercitationem mollitia maiores laboriosam necessitatibus tempora totam. Ea repellendus minima ut repellat labore officiis ab, nihil ullam assumenda! Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Fuga modi excepturi ex assumenda? Voluptas ut veritatis ipsa mollitia, nobis dolores consequuntur doloribus, minima molestiae tenetur, inventore recusandae voluptatibus voluptatem eligendi. Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br> Ea, expedita voluptates neque similique voluptatibus aspernatur quidem sapiente facere ad culpa beatae eaque nesciunt voluptatum natus distinctio autem voluptate saepe explicabo. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit praesentium, fuga, voluptate ullam, a porro eaque odio sed sit laborum accusamus similique quos tenetur at dicta quas pariatur quasi perspiciatis!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sit corrupti quis! Cupiditate sit quod maiores modi rem, eaque vel consectetur cum perspiciatis voluptates beatae error soluta repellat, temporibus nostrum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam libero, cumque nisi excepturi ea voluptatibus molestias non dolorem illum distinctio! Tenetur rerum quaerat asperiores exercitationem error obcaecati commodi adipisci at! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque earum provident, dicta exercitationem mollitia maiores laboriosam necessitatibus tempora totam. Ea repellendus minima ut repellat labore officiis ab, nihil ullam assumenda! Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Fuga modi excepturi ex assumenda? Voluptas ut veritatis ipsa mollitia, nobis dolores consequuntur doloribus, minima molestiae tenetur, inventore recusandae voluptatibus voluptatem eligendi. Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br> Ea, expedita voluptates neque similique voluptatibus aspernatur quidem sapiente facere ad culpa beatae eaque nesciunt voluptatum natus distinctio autem voluptate saepe explicabo. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit praesentium, fuga, voluptate ullam, a porro eaque odio sed sit laborum accusamus similique quos tenetur at dicta quas pariatur quasi perspiciatis!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sit corrupti quis! Cupiditate sit quod maiores modi rem, eaque vel consectetur cum perspiciatis voluptates beatae error soluta repellat, temporibus nostrum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam libero, cumque nisi excepturi ea voluptatibus molestias non dolorem illum distinctio! Tenetur rerum quaerat asperiores exercitationem error obcaecati commodi adipisci at! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque earum provident, dicta exercitationem mollitia maiores laboriosam necessitatibus tempora totam. Ea repellendus minima ut repellat labore officiis ab, nihil ullam assumenda! Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Fuga modi excepturi ex assumenda? Voluptas ut veritatis ipsa mollitia, nobis dolores consequuntur doloribus, minima molestiae tenetur, inventore recusandae voluptatibus voluptatem eligendi. Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br> Ea, expedita voluptates neque similique voluptatibus aspernatur quidem sapiente facere ad culpa beatae eaque nesciunt voluptatum natus distinctio autem voluptate saepe explicabo. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit praesentium, fuga, voluptate ullam, a porro eaque odio sed sit laborum accusamus similique quos tenetur at dicta quas pariatur quasi perspiciatis!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sit corrupti quis! Cupiditate sit quod maiores modi rem, eaque vel consectetur cum perspiciatis voluptates beatae error soluta repellat, temporibus nostrum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam libero, cumque nisi excepturi ea voluptatibus molestias non dolorem illum distinctio! Tenetur rerum quaerat asperiores exercitationem error obcaecati commodi adipisci at! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque earum provident, dicta exercitationem mollitia maiores laboriosam necessitatibus tempora totam. Ea repellendus minima ut repellat labore officiis ab, nihil ullam assumenda! Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Fuga modi excepturi ex assumenda? Voluptas ut veritatis ipsa mollitia, nobis dolores consequuntur doloribus, minima molestiae tenetur, inventore recusandae voluptatibus voluptatem eligendi. Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br> Ea, expedita voluptates neque similique voluptatibus aspernatur quidem sapiente facere ad culpa beatae eaque nesciunt voluptatum natus distinctio autem voluptate saepe explicabo. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit praesentium, fuga, voluptate ullam, a porro eaque odio sed sit laborum accusamus similique quos tenetur at dicta quas pariatur quasi perspiciatis!</p>
 
     
 </body>
